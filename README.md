@@ -9,7 +9,7 @@
 ---
 #### 1. Lossless algoritmi za opće korištenje
 #### 2. Lossless algoritmi za audio zapise
-#### 3. Lossless algoritmi za slike
+#### 3. Lossless algoritmi za fotografije
 
 
 ---
@@ -76,7 +76,7 @@ Nijedan algoritam kompresije bez gubitaka ne može učinkovito komprimirati sve 
 8.	Direct system transfer (DST)
 9.	Dolby TrueHD
 
-## Lossless algoritmi za slike:
+## Lossless algoritmi za fotografije:
 1.	HEIF
 2.	JPEG-XL
 3.	JPEG-XR
