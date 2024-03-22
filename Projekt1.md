@@ -139,7 +139,7 @@ Izbor kompresije ovisi o specifičnim potrebama. Lossless je idealan za očuvanj
 
 ##### Usporedba bitratea:
 
-Za usporedbu korištena je pjesma "Pubic Enemy" iz videoigre "Devil May Cry". Audio je uzet sa službenog CD-a s pjesmama. Izvorna kvaliteta zvuka je standardni CD (1411 kbps), te je kompresiran u tri različita formata:
+Za usporedbu korištena je pjesma "Pubic Enemy" iz videoigre "Devil May Cry". Audio je uzet sa službenog CD-a s pjesmama. Izvorna kvaliteta zvuka je standardni CD (1411 kbps), te je kompresiran u tri različita bitrate-a:
 1. 33 kbps
 2. 78 kbps
 3. 101 kbps
