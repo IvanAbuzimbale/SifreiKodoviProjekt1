@@ -6,9 +6,9 @@
 ## Uvod
 ## Algoritmi kompresije
 ## Lossless kompresija
-### Lossless algoritmi za opće korištenje
-### Lossless algoritmi za audio zapise
-### Lossless algoritmi za slike
+### 1. Lossless algoritmi za opće korištenje
+### 2. Lossless algoritmi za audio zapise
+### 3. Lossless algoritmi za slike
 
 U ovom dokumentu ćemo vam objasniti kako današnji algoritmi vrše kompresiju nad podacima multimedije.
 Prije nego što započnemo htjeli bih smo vam napraviti lagani uvod koji će objasniti osnovne koncepte o kojima ćemo pričati.
