@@ -106,7 +106,7 @@ Na primjer, audio datoteka s većim bitrateom će imati bogatiji zvuk i više de
 
 ### Lossy kompresija:
 
-Koristi tehnike poput PAC-a za odbacivanje podataka koje ljudsko uho teško ili uopće ne može čuti. To rezultira značajno manjim datotekama (obično 70-95% smanjenja), idealnim za pohranu i streaming. Očekivati je gubitak kvalitete zvuka, posebno na visokim frekvencijama.
+Koriste se tehnike poput PAC-a za odbacivanje podataka koje ljudsko uho teško ili uopće ne može čuti. To rezultira značajno manjim datotekama (obično 70-95% smanjenja), idealnim za pohranu i streaming. Očekivati je gubitak kvalitete zvuka, posebno na visokim frekvencijama.
 
 #### Primjeri:
 
