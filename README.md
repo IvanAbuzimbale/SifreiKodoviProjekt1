@@ -57,14 +57,13 @@ Za razliku od statičkih modela, prilagodljivi modeli (adaptive models) dinamič
 Nijedan algoritam kompresije bez gubitaka ne može učinkovito komprimirati sve moguće podatke. Iz tog razloga postoje mnogi različiti algoritmi koji su dizajnirani po vrsti ulaznih podataka ili s određenim pretpostavkama o tome koju će vrstu redundantnosti nekomprimirani podaci vjerojatno sadržavati.
 
 ---
+
 ## Lossless algoritmi za opće korištenje:
 1.	ANS
 2.	Aritmetičko enkodiranje
 3.	Burrows – Wheeler transformacijski algoritam
 4.	RLE
 5.	Huffmanovo enkodiranje
-
----
 
 ## Lossless algoritmi za audio zapise:
 1.	ATRAC
@@ -76,8 +75,6 @@ Nijedan algoritam kompresije bez gubitaka ne može učinkovito komprimirati sve 
 7.	Monkeys audio
 8.	Direct system transfer (DST)
 9.	Dolby TrueHD
-
----
 
 ## Lossless algoritmi za slike:
 1.	HEIF
