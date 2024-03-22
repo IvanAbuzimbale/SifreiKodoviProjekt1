@@ -150,7 +150,7 @@ Također, napravljena je usporedba audia kroz spektar koristeći program "Audaci
 
 <img width="1265" alt="image" src="https://github.com/IvanAbuzimbale/SifreiKodoviProjekt1/assets/58472137/871ac1c0-bfa0-4b74-a818-74989317f686">
 
-Od najlošije prema najboljoj kvaliteti:
+Spektri su posloženi od najlošije kvalitete prema najboljoj (od gore prema dolje).
 
 - **33 kbps** (MP3): Ovo je najlošija kvaliteta zvuka zbog niskog bitrate-a. Spektar pokazuje značajan gubitak visokih frekvencija.
 
