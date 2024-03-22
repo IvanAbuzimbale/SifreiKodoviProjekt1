@@ -5,11 +5,11 @@
 
 ### Uvod
 ### Algoritmi kompresije
-### Lossless kompresija
+### Lossless kompresija:
 ---
-#### 1. Lossless algoritmi za opće korištenje
-#### 2. Lossless algoritmi za audio zapise
-#### 3. Lossless algoritmi za slike
+####   1. Lossless algoritmi za opće korištenje
+####   2. Lossless algoritmi za audio zapise
+####   3. Lossless algoritmi za slike
 
 
 ---
