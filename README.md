@@ -10,8 +10,8 @@
 #### 1. Lossless algoritmi za opće korištenje
 #### 2. Lossless algoritmi za audio zapise
 #### 3. Lossless algoritmi za fotografije
-
-
+---
+### Što je bitrate i koliko je važan
 ---
 
 
@@ -83,4 +83,17 @@ Nijedan algoritam kompresije bez gubitaka ne može učinkovito komprimirati sve 
 4.	PNG
 5.	WebP
 6.	AVIF
+
+# Što je bitrate i koliko je važan
+---
+Bitrate se odnosi na brzinu kojom se digitalni podaci prenose ili procesiraju. Izražava se u jedinici bitova po sekundi (symbol: bit/s), često u kombinaciji sa SI prefiksom kao što su kilo (1 kbit/s = 1.000 bita/s) ili mega (1 Mbit/s = 1.000 kbit/s).
+
+Bitrate je ključan koncept kod digitalnih audio i video datoteka jer direktno utječe na njihovu kvalitetu i veličinu.
+
+Viši bitrate obično znači veću kvalitetu zvuka ili slike jer omogućava prenos više digitalnih informacji po sekundi.
+
+Niži bitrate rezultiraju manjim datotekama, ali i potencijalno lošijom kvalitetom.
+
+Na primjer, audio datoteka s većim bitrateom će imati bogatiji zvuk i više detalja nego datoteka s nižim bitrateom. Slično tome, video datoteka s visokim bitrateom će pružiti oštrije i jasnije slike u odnosu na video s nižim bitrateom.
+
 
