@@ -3,9 +3,9 @@
 
 # Sadržaj:
 
-### Uvod
-### Algoritmi kompresije
-### Lossless kompresija:
+### 1. Uvod
+### 2. Algoritmi kompresije
+### 3. Lossless kompresija:
 ---
 #### 1. Lossless algoritmi za opće korištenje
 #### 2. Lossless algoritmi za audio zapise
