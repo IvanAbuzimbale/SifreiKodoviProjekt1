@@ -1,1 +1,1 @@
-# SifreiKodoviProjekt1
+# Šifre i kodovi - Analiza algoritama za kompresiju multimedije
