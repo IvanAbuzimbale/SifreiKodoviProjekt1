@@ -22,11 +22,17 @@
 # Uvod
 ---
 Što je kompresija multimedije u općoj definiciji? Kompresija multimedije je proces smanjivanja veličine audio, video, slikovne ili tekstualne datoteke radi manjeg zauzimanja memorije na računalu.
+
 Osim što imamo korist za manje opterećenje memorije, kompresija je veoma bitna i kod slanja, to jeste transmisije multimedijalnih datoteka od jednog do drugog ili više računala i samog procesiranja takvih datoteka.
+
 Slanjem kompresirane datoteke smanjujemo opterećenje na mreži i mogućnost pogreške tokom tranzita unutar mreže prije nego što stigne do primatelja te datoteke.
+
 Kada jednom korisnik komprimira određenu datoteku ili cijelu mapu, mora postojati nekakav način kako vratiti taj isti sadržaj prije njezine kompresije, tu ulazi termin dekompresija.
+
 Dekompresija je proces koji vraća kompresiranu datoteku ili mapu dali ona bila multimedijalna ili ne, u njezinu originalnu veličinu.
+
 Mnogo je koristi od dekompresije, jedna od glavnih je da primatelj poslane datoteke može pogledati cijeli sadržaj u cijelosti kao što je bilo u originalu pošiljatelja.
+
 Sada kada imamo nekakav dojam što čemu služi, pitanje je kako implementiramo navedene procese. Implementacija se vrši koristeći algoritme za kompresiju i dekompresiju, kod kojih jedan ne može raditi bez drugoga.
 
 # Algoritmi kompresije
@@ -131,3 +137,25 @@ Izbor kompresije ovisi o specifičnim potrebama. Lossless je idealan za očuvanj
 | Smanjna veličina? | U manjoj količini (20% - 30%)                | U većoj količini (70% - 95%)                   |
 | Korisno za?       | Ključne datoteke (dokumenti, programski kod) | Multimediju (fotografije, glazba, videozapisi) |
 
+##### Usporedba bitratea
+
+Za usporedbu korištena je pjesma "Pubic Enemy" iz videoigre "Devil May Cry". Audio je uzet sa službenog CD-a s pjesmama. Izvorna kvaliteta zvuka je standardni CD (1411 kbps), te je kompresiran u tri različita formata:
+1. 33 kbps
+2. 78 kbps
+3. 101 kbps
+
+Audio se može pronaći na sljedećoj poveznici: [Šifre i kodovi - Analiza algoritama za kompresiju multimedije](https://drive.google.com/drive/folders/12xwZvfYPN3AL-ZPqupZ1JehIhrPCAiE8?usp=sharing)
+
+Također, napravljena je usporedba audia kroz spektar koristeći program "Audacity".
+
+<img width="1265" alt="image" src="https://github.com/IvanAbuzimbale/SifreiKodoviProjekt1/assets/58472137/871ac1c0-bfa0-4b74-a818-74989317f686">
+
+Od najlošije prema najboljoj kvaliteti:
+
+- **33 kbps** (MP3): Ovo je najlošija kvaliteta zvuka zbog niskog bitrate-a. Spektar pokazuje značajan gubitak visokih frekvencija.
+
+- **78 kbps** (MP3): Kvaliteta zvuka je malo bolja od 33 kbps, ali je i dalje loša. Spektar pokazuje malo više detalja nego prijašnji.
+
+- **101 kbps** (MP3): Kvaliteta zvuka je dosta poboljšana u usporedbi sa prvotnim primjerom. Spektar pokazuje malo više detalja i bolje očuvanje visokih frekvencija.
+
+- **1411 kbps** (WAV): Ovo je najveća kvaliteta zvuka od svih četiriju datoteka. WAV format je lossless, što znači da se čuvaju svi originalni podaci audio zapisa. Spektar je bogat i detaljan, predstavljajući izvorni audio signal.
