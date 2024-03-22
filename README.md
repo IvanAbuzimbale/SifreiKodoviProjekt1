@@ -13,6 +13,8 @@
 ---
 ### Što je bitrate i koliko je važan
 ---
+#### Razlika između lossy i lossless u praksi
+---
 
 
 > U ovom dokumentu ćemo vam objasniti kako današnji algoritmi vrše kompresiju nad podacima multimedije. Prije nego što započnemo htjeli bih smo vam napraviti lagani uvod koji će objasniti osnovne koncepte o kojima ćemo pričati.
@@ -96,4 +98,27 @@ Niži bitrate rezultiraju manjim datotekama, ali i potencijalno lošijom kvalite
 
 Na primjer, audio datoteka s većim bitrateom će imati bogatiji zvuk i više detalja nego datoteka s nižim bitrateom. Slično tome, video datoteka s visokim bitrateom će pružiti oštrije i jasnije slike u odnosu na video s nižim bitrateom.
 
+## Razlika između lossy i lossless u praksi
 
+Glavna razlika između lossy i lossless kompresije u praksi svodi se na kompromis između kvalitete i veličine datoteke.
+
+Lossless kompresija daje prednost očuvanju originalne kvalitete podataka. To je poput pažljivog pakiranja koferu za putovanje, osiguravajući da sve savršeno stane bez oštećenja ili odbacivanja bilo čega. Evo kako to funkcionira u praksi:
+
+Primjena: Koristi se za kritične podatke gdje je svaka pojedinost bitna, poput tekstualnih dokumenata, tablica, koda i medicinskih slika.
+Smanjenje veličine datoteke: Nuđi umjereno smanjenje veličine datoteke, obično oko 30-60%.
+Primjer: Zbijanje dokumenta smanjuje njegovu veličinu, ali vam omogućava da kasnije savršeno rekonstruirate originalnu datoteku.
+Lossy kompresija odbacuje neke podatke kako bi se postigla znatno manja veličina datoteke. To je poput pakiranja kofera za brzi bijeg, fokusirajući se na uzimanje onoga što vam treba, uz potencijalno žrtvovanje nekih nebitnih stvari. Evo kako se to odvija:
+
+Primjena: Idealno za multimediju gdje je prihvatljiv određeni gubitak kvalitete, poput slika, glazbe i video zapisa.
+Smanjenje veličine datoteke: Nuđi znatno veće omjere kompresije, često smanjujući veličinu datoteka za 70-95%.
+Primjer: Konverzija slike visoke rezolucije u JPEG format značajno smanjuje njezinu veličinu, ali možete izgubiti neke fine detalje.
+Evo tablice koja sažima ključne razlike:
+
+| Pitanje           | Lossless kompresija                          | Lossy kompresija                               |
+|-------------------|----------------------------------------------|------------------------------------------------|
+| Čuva kvalitetu?   | Da                                           | Ne, dio podataka se gubi                       |
+| Smanjna veličina? | U manjoj količini (20% - 30%)                | U većoj količini (70% - 95%)                   |
+| Korisno za?       | Ključne datoteke (dokumenti, programski kod) | Multimediju (fotografije, glazba, videozapisi) |
+
+U nedoumici, prioritet dajte lossless kompresiji za važne podatke gdje je preciznost ključna.
+Za multimediju, lossy kompresija je često put naprijed, posebno ako je prostor za pohranu ili brzina prijenosa ograničena. Ljudsko oko i uho su često manje osjetljivi na suptilne gubitke kvalitete u slikama i zvuku u usporedbi s nekomprimiranim verzijama. Obično možete prilagoditi razinu kompresije kako biste pronašli dobru ravnotežu između kvalitete i veličine datoteke.
