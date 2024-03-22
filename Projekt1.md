@@ -126,7 +126,7 @@ Lossy formati:
 2. AAC
 3. OGG
 
-Zaključak:
+##### Zaključak:
 
 Izbor kompresije ovisi o specifičnim potrebama. Lossless je idealan za očuvanje originalne kvalitete zvuka, dok je lossy praktičniji za optimizaciju veličine datoteke. Razumijevanje prednosti i nedostataka obje metode pomaže u donošenju informirane odluke o kompresiji audio zapisa.
 
