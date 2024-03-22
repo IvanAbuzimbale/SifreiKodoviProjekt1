@@ -11,9 +11,9 @@
 #### 2. Lossless algoritmi za audio zapise
 #### 3. Lossless algoritmi za fotografije
 ---
-### Što je bitrate i koliko je važan
+### 4. Što je bitrate i koliko je važan
 ---
-#### Razlika između lossy i lossless u praksi
+#### 1. Razlika između lossy i lossless u praksi
 ---
 
 
