@@ -100,19 +100,30 @@ Na primjer, audio datoteka s većim bitrateom će imati bogatiji zvuk i više de
 
 ## Razlika između lossy i lossless u praksi
 
-Glavna razlika između lossy i lossless kompresije u praksi svodi se na kompromis između kvalitete i veličine datoteke.
+### Lossless kompresija:
 
-Lossless kompresija daje prednost očuvanju originalne kvalitete podataka. To je poput pažljivog pakiranja koferu za putovanje, osiguravajući da sve savršeno stane bez oštećenja ili odbacivanja bilo čega. Evo kako to funkcionira u praksi:
+Čuva sve originalne podatke, osiguravajući identičnu kvalitetu zvuka kao i nekomprimirani zapis. Očekivani omjer kompresije je 20-30% smanjenja veličine datoteke.
 
-Primjena: Koristi se za kritične podatke gdje je svaka pojedinost bitna, poput tekstualnih dokumenata, tablica, koda i medicinskih slika.
-Smanjenje veličine datoteke: Nuđi umjereno smanjenje veličine datoteke, obično oko 30-60%.
-Primjer: Zbijanje dokumenta smanjuje njegovu veličinu, ali vam omogućava da kasnije savršeno rekonstruirate originalnu datoteku.
-Lossy kompresija odbacuje neke podatke kako bi se postigla znatno manja veličina datoteke. To je poput pakiranja kofera za brzi bijeg, fokusirajući se na uzimanje onoga što vam treba, uz potencijalno žrtvovanje nekih nebitnih stvari. Evo kako se to odvija:
+### Lossy kompresija:
 
-Primjena: Idealno za multimediju gdje je prihvatljiv određeni gubitak kvalitete, poput slika, glazbe i video zapisa.
-Smanjenje veličine datoteke: Nuđi znatno veće omjere kompresije, često smanjujući veličinu datoteka za 70-95%.
-Primjer: Konverzija slike visoke rezolucije u JPEG format značajno smanjuje njezinu veličinu, ali možete izgubiti neke fine detalje.
-Evo tablice koja sažima ključne razlike:
+Koristi tehnike poput PAC-a za odbacivanje podataka koje ljudsko uho teško ili uopće ne može čuti. To rezultira značajno manjim datotekama (obično 70-95% smanjenja), idealnim za pohranu i streaming. Očekivati je gubitak kvalitete zvuka, posebno na visokim frekvencijama.
+
+#### Primjeri:
+
+Lossless formati:
+1. FLAC
+2. ALAC
+3. WAV
+
+Lossy formati:
+1. MP3
+2. AAC
+3. OGG
+
+Zaključak:
+
+Izbor kompresije ovisi o specifičnim potrebama. Lossless je idealan za očuvanje originalne kvalitete zvuka, dok je lossy praktičniji za optimizaciju veličine datoteke. Razumijevanje prednosti i nedostataka obje metode pomaže u donošenju informirane odluke o kompresiji audio zapisa.
+
 
 | Pitanje           | Lossless kompresija                          | Lossy kompresija                               |
 |-------------------|----------------------------------------------|------------------------------------------------|
@@ -120,5 +131,3 @@ Evo tablice koja sažima ključne razlike:
 | Smanjna veličina? | U manjoj količini (20% - 30%)                | U većoj količini (70% - 95%)                   |
 | Korisno za?       | Ključne datoteke (dokumenti, programski kod) | Multimediju (fotografije, glazba, videozapisi) |
 
-U nedoumici, prioritet dajte lossless kompresiji za važne podatke gdje je preciznost ključna.
-Za multimediju, lossy kompresija je često put naprijed, posebno ako je prostor za pohranu ili brzina prijenosa ograničena. Ljudsko oko i uho su često manje osjetljivi na suptilne gubitke kvalitete u slikama i zvuku u usporedbi s nekomprimiranim verzijama. Obično možete prilagoditi razinu kompresije kako biste pronašli dobru ravnotežu između kvalitete i veličine datoteke.
