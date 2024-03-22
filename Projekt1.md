@@ -148,7 +148,7 @@ Audio se može pronaći na sljedećoj poveznici: [Šifre i kodovi - Analiza algo
 
 Također, napravljena je usporedba audia kroz spektar koristeći program "Audacity".
 
-<img width="1280" alt="image" src="https://github.com/IvanAbuzimbale/SifreiKodoviProjekt1/assets/58472137/93b88c57-798b-4104-bd85-58db491674e2">
+<img width="1280" alt="image" src="https://github.com/IvanAbuzimbale/SifreiKodoviProjekt1/assets/58472137/b01ac6c6-f2ca-4cf9-a664-531191f415ec">
 
 Spektri su posloženi od najlošije kvalitete prema najboljoj (od gore prema dolje).
 
