@@ -66,6 +66,7 @@ Nijedan algoritam kompresije bez gubitaka ne može učinkovito komprimirati sve 
 
 #### Huffmanovo kodiranje:
 
+---
 U računalnoj znanosti i teoriji informacija, Huffmanov kod je posebna vrsta optimalnog prefiks koda koji se obično koristi za kompresiju podataka bez gubitaka. Proces pronalaženja ili korištenja takvog koda je Huffmanovo kodiranje. Izlaz iz Huffmanovog algoritma može se promatrati kao kodna tablica varijabilne duljine za kodiranje izvornog simbola.
 
 Algoritam ovu tablicu izvodi iz procijenjene vjerojatnosti ili učestalosti pojavljivanja (težine) za svaku moguću vrijednost izvornog simbola. Kao i kod drugih metoda entropijskog kodiranja, češći simboli općenito se predstavljaju s manje bitova od manje uobičajenih simbola.
@@ -86,14 +87,16 @@ Težina novog čvora postavljena je na zbroj težine djece. Zatim ponovno primje
 
 #### Lossless algoritmi za opće korištenje:
 
+---
 1. ANS
 2. Aritmetičko enkodiranje
 3. Burrows – Wheeler transformacijski algoritam
 4. RLE
 5. Huffmanovo enkodiranje
 
+---
 #### Lossless algoritmi za slike:
-
+---
 1. PNG (Portable Network Graphic) - PNG je naširoko korišten format kompresije bez gubitaka za slike. Koristi kombinaciju tehnika kompresije, uključujući deflate kompresiju, za smanjenje veličine datoteke bez gubitka slikovnih podataka. Deflate kompresija nudi ravnotežu između učinkovitosti kompresije i računalne složenosti, što je čini prikladnom za širok raspon primjena. Njegova učinkovitost je u njegovoj sposobnosti identificiranja i uklanjanja suvišnih informacija uz očuvanje cjelovitosti izvornih podataka.
 
 2. GIF (Graphics Interchange Format) - GIF podržava kompresiju bez gubitaka za slike s do 256 boja. Kompresiju postiže korištenjem LZW (Lempel-Ziv-Welch) algoritma kompresije, koji je učinkovit za slike s velikim područjima pune boje.
@@ -105,6 +108,7 @@ Težina novog čvora postavljena je na zbroj težine djece. Zatim ponovno primje
 5. WebP - WebP je relativno noviji format slike koji je razvio Google. Podržava i kompresiju s gubicima i bez gubitaka. WebP kompresija bez gubitaka temelji se na predviđanju vrijednosti piksela i entropijskom kodiranju.
 ---
 #### LZ77 kompresija:
+---
 Je algoritam kompresije temeljen na rječniku koji traži ponovljene obrasce u ulaznim podacima. Zamjenjuje ove obrasce referencama na prethodna pojavljivanja.
 
 Algoritam koristi klizni prozor za traženje podudaranja. Traži najdulje podudaranje za svaku poziciju u ulaznim podacima.
@@ -168,7 +172,10 @@ Lossy algoritmi za slike:
 4. AVIF (AV1 Image File Format)
 
 Lossy algoritmi za slike:
+
+---
 #### JPEG (Joint Photographhic Experts Group)
+---
 Ovo je jedan od najčešće korištenih formata za slike na internetu.
 
 Lossy algoritam za kompresiju koji kao rezultat daje znatno manju količinu podataka sa vrlo malom (ako ikakvom) vizualnom promjenom kvalitete slike i rezolucije. 
@@ -182,7 +189,9 @@ Koraci pretvorbe sliku u JPEG:
 - Kako bi pogledali .jpg datoteku koristeći image viewer, tu datoteku moramo dekodirati. 
 - Kako bi se ta slika morala prikazati image viewer mora proći po ovim gore navedenim koracima u obrnutom redoslijedu.
  
+---
 #### WebP
+---
 Ovaj lossy algoritam kompresije je napravio Google u 2013. da se natječe s jpg-om za format fotografija, pa zato i imaju nekoliko sličnosti između između njih. 
 
 Najprije se slika podijeli na makroblokove te se za svaki makroblok koristi model za predviđanje, odnosno filtriranje, WebP primjenjuje filtriranje koristeći medotu bloka, a to se postiže definiranjem dvaju skupova piksela oko bloka: redak iznad bloka A i stupac lijevo od bloka L.
@@ -199,7 +208,9 @@ Nakon toga slijedi entropijsko kodiranje, koristeći najčešće tehnika poput a
 
 Prosjek u uštedi podataka između WebP i JPEG-a je između 20 i 35%.
 
+---
 #### HEIF (High Efficiency Image File Format)
+---
 HEIF je format koji kosisti moderne tehnike kompresije kojima se pohranjuju pojedinačne slika na kompaktan i visokokvalitetan način.
 
 Cilj HEIF-a je poboljšati postojeće formate slika poput JPEG-a, nudeći bolju kompresiju i naprednije značajke.
@@ -210,7 +221,9 @@ Ovim načinom se znatno brišu nepotrebne podatke i efikasnije se kompresiraju s
 
 Prednosti HEIF-a su: veća efikasnost kompresije, poboljšana kvaliteta slike, podrška za napredne postavke, fleksibilnost i mogućnost prilagodbe za buduće tehnologije kompresije 
 
+---
 #### AVIF (AV1 Image File Format)
+---
 AVIF je moderan format slike koji implementira tehnologiju video kompresije kodeka AV1 kako bi se postigle učinkovite kompresije slika.
 
 Kod ovog lossy načina AVIF kompresira sliku koristeći nekoliko tehnika. 
@@ -224,6 +237,7 @@ Sljedeći korak je entropijsko kodiranje. Tu se koristeći tehnikama poput arihm
 
 ---
 ### Audio kompresija:
+---
 Kompresija audio podataka, koju ne treba pomiješati s kompresijom dinamičkog raspona, ima potencijal smanjiti propusnost prijenosa i zahtjeve za pohranu audio podataka.
 
 Formati kompresije zvuka implementirani su u softver kao audio kodeksi. U kompresiji s gubicima i bez gubitaka redundancija informacija je smanjena, korištenjem metoda kao što su kodiranje, kvantizacija, DCT i linearno predviđanje kako bi se smanjila količina informacija korištenih za predstavljanje nekomprimiranih podataka.
@@ -236,6 +250,7 @@ Teorija filtera što je povezana sa dizajnom filtra je proces dizajniranja filtr
 
 ---
 #### Lossy algoritmi za audio zapise:
+---
 Kompresija zvuka s gubitkom koristi se u širokom rasponu aplikacija. Uz samostalne audio aplikacije za reprodukciju datoteka u MP3 playerima ili računalima. digitalno komprimirani audio tokovi koriste se u većini video DVD-ova, digitalnoj televiziji, strujanju medija na internetu, satelitskom i kabelskom radiju, a sve više kod zemaljskim radijskim emisijama.
 
 Kompresija s gubicima obično postiže daleko veću kompresiju od kompresije bez gubitaka, odbacivanjem manje kritičnih podataka na temelju psihoakustičkih optimizacija. Ovi se algoritmi gotovo svi oslanjaju na psihoakustiku kako bi eliminirali ili smanjili vjernost manje čujnih zvukova, čime se smanjuje prostor potreban za njihovo pohranjivanje ili prijenos.
@@ -260,7 +275,7 @@ Međutim, formati s gubitkom kao što je MP3 vrlo su popularni među krajnjim ko
 
 ---
 #### Metode audio algoritama kompresije sa gubitkom:
-
+---
 Kako bi se utvrdilo koje su informacije u audio signalu perceptivno irelevantne, većina algoritama kompresije s gubitkom koristi transformacije kao što je MDCT za pretvaranje uzorkovanih valnih oblika u vremenskoj domeni u domenu transformacije, obično frekvencijsku domenu.
 
 MDCT: Modificirana diskretna kosinusna transformacija je dizajniran za izvođenje na uzastopnim blokovima većeg skupa podataka, pri čemu se naredni blokovi preklapaju tako da se zadnja polovica jednog bloka podudara s prvom polovicom sljedećeg bloka.
@@ -281,6 +296,7 @@ Nakon transformacije, frekvencije komponenti mogu se odrediti prema tome koliko 
 
 ---
 #### MP3:
+---
 Audio signal se najprije uzorkuje na određenoj frekvenciji (npr. 44,1 kHz za zvuk CD kvalitete), a zatim se dijeli na male frame-ove. Svaki frame predstavlja kratki segment audio signala, dug oko 26 milisekundi.
 
 Za svaki okvir, algoritam primjenjuje modificiranu diskretnu kosinusnu transformaciju (MDCT) za pretvaranje uzoraka u vremenskoj domeni u podatke u frekvencijskoj domeni
@@ -296,6 +312,7 @@ Razina kompresije može se podesiti putem bitrate (brzine prijenosa) postavke, m
 
 ---
 #### ACC:
+---
 Koristi tehnike perceptivnog kodiranja za uklanjanje suvišnih i manje čujnih dijelova audio signala.
 
 Kao nadogradnja na MP3, ACC za analizu karakteristika audio signala koristeći psihoakustičke modele.
@@ -312,6 +329,7 @@ AAC podržava skalabilnost brzine prijenosa, što omogućuje kodiranje više ver
 
 ---
 #### Ogg Vorbis:
+---
 Ogg Vorbis je format kompresije zvuka otvorenog koda koju je razvila Zaklada Xiph.Org.
 Slično drugim modernim algoritmima za kompresiju zvuka, Ogg Vorbis dijeli audio signal u male blokove i provodi transformaciju vremensko-frekvencijske domene.
 
@@ -327,6 +345,7 @@ Za stereo i višekanalni zvuk, Ogg Vorbis koristi tehnike spajanja kanala kako b
 
 ---
 #### Opus:
+---
 Opus je vrlo svestran i učinkovit format kompresije zvuka koji je razvila Internet Engineering Task Force (IETF) kao RFC 6716. Optimiziran je za širok raspon audio aplikacija, uključujući komunikaciju u stvarnom vremenu, strujanje i pohranu. Kodek Opus postiže nisku latenciju, visoku učinkovitost kompresije i izvrsnu kvalitetu zvuka u širokom rasponu brzina prijenosa.
 
 Opus koristi hibridni pristup kodiranja koji kombinira linearno prediktivno kodiranje (LPC) i tehnike kodiranja temeljene na transformaciji. Koristi SILK (Super wideband) i CELT (Constrained Energy Lapped Transform) kodekse koji su optimizirani za govor i opće audio signale.
@@ -344,6 +363,7 @@ Izlaz algoritma kompresije Opus je komprimirani audio tok ili datoteka, obično 
 
 ---
 #### WMA:
+---
 Windows Media Audio (WMA) niz je vlasničkih audio kodeksa koje je razvio Microsoft.
 
 WMA koristi psihoakustičke modele za analizu karakteristika audio signala. Kao i velika većina lossy algoritama kompresije, WMA koristi modificiranu diskretnu kosinusnu transformaciju (MDCT). Nakon transformacije frekvencijske domene, WMA kvantizira frekvencijske koeficijente kako bi smanjio broj bitova potrebnih za njihovo predstavljanje.
@@ -357,7 +377,7 @@ Izlaz algoritma WMA kompresije je komprimirana audio datoteka s nastavkom ".wma"
 
 ---
 ### Lossless algoritmi za audio zapise:
-
+---
 Kompresija zvuka bez gubitaka stvara prikaz digitalnih podataka koji se mogu dekodirati u točan digitalni duplikat izvornika. Omjeri kompresije su oko 50-60% izvorne veličine.
 1. MPEG-4 SLS
 2. ALAC (Apple Lossless Codecs)
@@ -367,6 +387,7 @@ Kompresija zvuka bez gubitaka stvara prikaz digitalnih podataka koji se mogu dek
 
 ---
 #### MPEG-4 SLS:
+---
 MPEG-4 SLS (Scalable Lossless Coding) algoritam je kompresije zvuka bez gubitaka standardiziran od strane Moving Picture Experts Group (MPEG) kao dio MPEG-4 skupa standarda za audio kodiranje. Dizajniran je za pružanje visokokvalitetne kompresije audio podataka bez gubitaka, što ga čini prikladnim za aplikacije u kojima je očuvanje vjernosti zvuka kritično.
 
 MPEG-4 SLS koristi linearno predviđanje za modeliranje vremenskih i spektralnih karakteristika audio signala.
@@ -380,6 +401,7 @@ MPEG-4 SLS omogućuje i sloj s gubicima i sloj za korekciju bez gubitaka sličan
 
 ---
 #### ALAC:
+---
 Razvijen od strane Apple Inc. 2004. za kompresiju audio podataka bez gubitaka. Nakon što je prvotno bio zaštićen od svog početka 2004., Apple je krajem 2011. omogućio kodek otvorenog koda.
 
 ALAC podržava do 8 audio kanala na 16, 20, 24 i 32 bita dubine s maksimalnom brzinom uzorkovanja od 384 kHz.
@@ -406,6 +428,7 @@ Dekomprimirani audio podaci su bit-po-bit identični izvornom nekomprimiranom zv
  
 ---
 #### Dolby TrueHD:
+---
 Dolby TrueHD je višekanalni audio kodek bez gubitaka koji su razvili Dolby Laboratories, koji se uglavnom koristi u Blu-ray Disc i kompatibilnom hardveru. Dolby TrueHD specifikacija omogućuje do 16 diskretnih audio kanala, svaki s brzinom uzorkovanja do 192 kHz i dubinom uzorkovanja do 24 bita.
 
 Dolbyjev mehanizam kompresije za TrueHD je Meridian Lossless Packing (MLP)
@@ -436,6 +459,7 @@ Tijekom reprodukcije, zvuk kodiran Dolby TrueHD dekodira se pomoću kompatibilno
 
 ---
 #### APE:
+---
 Datoteke kodirane u APE-u (Monkey's Audio) obično se smanjuju na otprilike polovicu izvorne veličine, s time da se vrijeme prijenosa podataka i zahtjevi za pohranu smanjuju u skladu s tim.
 
 Kao i svaka shema kompresije bez gubitaka, Monkey's Audio format zauzima nekoliko puta više prostora od formata kompresije s gubitkom, otprilike dvostruko više od MP3 datoteke brzine 
@@ -455,6 +479,7 @@ Komprimirana datoteka sadrži kodirane audio podatke, zajedno s metapodacima i i
 
 ---
 #### WavPack:
+---
 WavPack je besplatni format audio kompresije otvorenog koda bez gubitaka i aplikacija koja implementira format. Jedinstven je po tome što podržava hibridnu kompresiju zvuka uz normalnu kompresiju koja je slična načinu na koji radi FLAC. Također podržava komprimiranje širokog spektra formata bez gubitaka, uključujući različite varijante PCM-a i DSD-a koji se koriste u SACD-ovima, zajedno sa podrškom za surround zvuk.
 
 WavPack kompresija može komprimirati 8, 16, 24 i 32-bitne PCM audio datoteke s fiksnom točkom i 32-bitne pokretne točke u formatu datoteke ".WAV".
@@ -491,9 +516,9 @@ Niži bitrate rezultiraju manjim datotekama, ali i potencijalno lošijom kvalite
 
 Na primjer, audio datoteka s većim bitrateom će imati bogatiji zvuk i više detalja nego datoteka s nižim bitrateom. Slično tome, video datoteka s visokim bitrateom će pružiti oštrije i jasnije slike u odnosu na video s nižim bitrateom.
 
-
+---
 ##### Usporedba bitratea:
-
+---
 Za usporedbu korištena je pjesma "Pubic Enemy" iz videoigre "Devil May Cry". Audio je uzet sa službenog CD-a s pjesmama. Izvorna kvaliteta zvuka je standardni CD (1411 kbps), te je kompresiran u tri različita bitrate-a:
 1. 33 kbps
 2. 78 kbps
