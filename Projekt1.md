@@ -8,10 +8,9 @@
 ### 3. Lossless kompresija
 ### 4. Huffmanovo kodiranje
 ### 5. Lossless algoritmi za opće korištenje
-### Audio kompresija
-### 6. Lossless algoritmi za audio zapise
-### 7. Lossless algoritmi za slike
-### 8. Što je bitrate i koliko je važan
+### 6. Audio kompresija
+### 7. Što je bitrate i koliko je važan
+### 8. Zaključak
 
 ---
 
@@ -437,14 +436,6 @@ Niži bitrate rezultiraju manjim datotekama, ali i potencijalno lošijom kvalite
 
 Na primjer, audio datoteka s većim bitrateom će imati bogatiji zvuk i više detalja nego datoteka s nižim bitrateom. Slično tome, video datoteka s visokim bitrateom će pružiti oštrije i jasnije slike u odnosu na video s nižim bitrateom.
 
-Izbor kompresije ovisi o specifičnim potrebama. Lossless je idealan za očuvanje originalne kvalitete zvuka, dok je lossy praktičniji za optimizaciju veličine datoteke. Razumijevanje prednosti i nedostataka obje metode pomaže u donošenju informirane odluke o kompresiji audio zapisa.
-
-
-| Pitanje            | Lossless kompresija                          | Lossy kompresija                               |
-|--------------------|----------------------------------------------|------------------------------------------------|
-| Čuva kvalitetu?    | Da                                           | Ne, dio podataka se gubi                       |
-| Smanjena veličina? | U manjoj količini (50% - 60%)                | U većoj količini (70% - 95%)                   |
-| Korisno za?        | Ključne datoteke (dokumenti, programski kod) | Multimediju (fotografije, glazba, videozapisi) |
 
 ##### Usporedba bitratea:
 
@@ -468,3 +459,28 @@ Spektri su posloženi od najlošije kvalitete prema najboljoj (od gore prema dol
 - **101 kbps** (MP3): Kvaliteta zvuka je dosta poboljšana u usporedbi sa prvotnim primjerom. Spektar pokazuje malo više detalja i bolje očuvanje visokih frekvencija.
 
 - **1411 kbps** (WAV): Ovo je najveća kvaliteta zvuka od svih četiriju datoteka. WAV format je lossless, što znači da se čuvaju svi originalni podaci audio zapisa. Spektar je bogat i detaljan, predstavljajući izvorni audio signal.
+
+---
+### Zaključak
+---
+
+Izbor kompresije ovisi o specifičnim potrebama. Lossless je idealan za očuvanje originalne kvalitete zvuka, dok je lossy praktičniji za optimizaciju veličine datoteke. Razumijevanje prednosti i nedostataka obje metode pomaže u donošenju informirane odluke o kompresiji audio zapisa.
+
+
+| Pitanje            | Lossless kompresija                          | Lossy kompresija                               |
+|--------------------|----------------------------------------------|------------------------------------------------|
+| Čuva kvalitetu?    | Da                                           | Ne, dio podataka se gubi                       |
+| Smanjena veličina? | U manjoj količini (50% - 60%)                | U većoj količini (70% - 95%)                   |
+| Korisno za?        | Ključne datoteke (dokumenti, programski kod) | Multimediju (fotografije, glazba, videozapisi) |
+
+Neki od lossless algoritama su:
+
+- WAV
+- FLAC
+- ALAC
+
+Neki od lossy algoritama su:
+
+- MP3
+- OGG
+- AAC
