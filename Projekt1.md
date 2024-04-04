@@ -11,10 +11,8 @@
 ### 6. Lossless algoritmi za audio zapise
 ### 7. Lossless algoritmi za fotografije
 ### 8. Što je bitrate i koliko je važan
----
-#### 1. Razlika između lossy i lossless u praksi
----
 
+---
 
 > U ovom dokumentu ćemo vam objasniti kako današnji algoritmi vrše kompresiju nad podacima multimedije. Prije nego što započnemo htjeli bih smo vam napraviti lagani uvod koji će objasniti osnovne koncepte o kojima ćemo pričati.
 ---
