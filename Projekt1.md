@@ -436,16 +436,14 @@ Niži bitrate rezultiraju manjim datotekama, ali i potencijalno lošijom kvalite
 
 Na primjer, audio datoteka s većim bitrateom će imati bogatiji zvuk i više detalja nego datoteka s nižim bitrateom. Slično tome, video datoteka s visokim bitrateom će pružiti oštrije i jasnije slike u odnosu na video s nižim bitrateom.
 
-##### Zaključak:
-
 Izbor kompresije ovisi o specifičnim potrebama. Lossless je idealan za očuvanje originalne kvalitete zvuka, dok je lossy praktičniji za optimizaciju veličine datoteke. Razumijevanje prednosti i nedostataka obje metode pomaže u donošenju informirane odluke o kompresiji audio zapisa.
 
 
-| Pitanje           | Lossless kompresija                          | Lossy kompresija                               |
-|-------------------|----------------------------------------------|------------------------------------------------|
-| Čuva kvalitetu?   | Da                                           | Ne, dio podataka se gubi                       |
-| Smanjna veličina? | U manjoj količini (50% - 60%)                | U većoj količini (70% - 95%)                   |
-| Korisno za?       | Ključne datoteke (dokumenti, programski kod) | Multimediju (fotografije, glazba, videozapisi) |
+| Pitanje            | Lossless kompresija                          | Lossy kompresija                               |
+|--------------------|----------------------------------------------|------------------------------------------------|
+| Čuva kvalitetu?    | Da                                           | Ne, dio podataka se gubi                       |
+| Smanjena veličina? | U manjoj količini (50% - 60%)                | U većoj količini (70% - 95%)                   |
+| Korisno za?        | Ključne datoteke (dokumenti, programski kod) | Multimediju (fotografije, glazba, videozapisi) |
 
 ##### Usporedba bitratea:
 
