@@ -5,13 +5,12 @@
 
 ### 1. Uvod
 ### 2. Algoritmi kompresije
-### 3. Lossless kompresija:
----
-#### 1. Lossless algoritmi za opće korištenje
-#### 2. Lossless algoritmi za audio zapise
-#### 3. Lossless algoritmi za fotografije
----
-### 4. Što je bitrate i koliko je važan
+### 3. Lossless kompresija
+### 4. Huffmanovo kodiranje
+### 5 Lossless algoritmi za opće korištenje
+### 6. Lossless algoritmi za audio zapise
+### 7. Lossless algoritmi za fotografije
+### 8. Što je bitrate i koliko je važan
 ---
 #### 1. Razlika između lossy i lossless u praksi
 ---
@@ -20,6 +19,7 @@
 > U ovom dokumentu ćemo vam objasniti kako današnji algoritmi vrše kompresiju nad podacima multimedije. Prije nego što započnemo htjeli bih smo vam napraviti lagani uvod koji će objasniti osnovne koncepte o kojima ćemo pričati.
 ---
 ### Uvod
+---
 Što je kompresija multimedije u općoj definiciji? Kompresija multimedije je proces smanjivanja veličine audio, video, slikovne ili tekstualne datoteke radi manjeg zauzimanja memorije na računalu.
 
 Osim što imamo korist za manje opterećenje memorije, kompresija je veoma bitna i kod slanja, to jeste transmisije multimedijalnih datoteka od jednog do drugog ili više računala i samog procesiranja takvih datoteka.
@@ -33,6 +33,7 @@ Dekompresija je proces koji vraća kompresiranu datoteku ili mapu dali ona bila 
 Mnogo je koristi od dekompresije, jedna od glavnih je da primatelj poslane datoteke može pogledati cijeli sadržaj u cijelosti kao što je bilo u originalu pošiljatelja.
 
 Sada kada imamo nekakav dojam što čemu služi, pitanje je kako implementiramo navedene procese. Implementacija se vrši koristeći algoritme za kompresiju i dekompresiju, kod kojih jedan ne može raditi bez drugoga.
+
 ---
 #### Algoritmi kompresije
 Postoje dva tipa algoritama za kompresiju:
@@ -40,7 +41,7 @@ Postoje dva tipa algoritama za kompresiju:
 2. Lossy compression (Kompresija sa gubitkom)
 ---
 #### Lossless kompresija:
-
+---
 Ova vrsta kompresije smanjuje veličinu podataka bez gubitka informacija. Kada se podaci dekomprimiraju, identični su izvornoj informaciji. Najbolji primjer takvog algoritma su Run-lenght encoding (RLE), Huffman enkodiranje, Deflate i Burrows – Wheeler transformacijski algoritam.
 
 Kompresija bez gubitaka je moguća jer većina podataka iz stvarnog svijeta pokazuju statističku redundantnost.
@@ -85,7 +86,7 @@ Težina novog čvora postavljena je na zbroj težine djece. Zatim ponovno primje
 
 ---
 
-#### Lossless algoritmi za opće korištenje:
+#### 1. Lossless algoritmi za opće korištenje:
 
 1. ANS
 2. Aritmetičko enkodiranje
