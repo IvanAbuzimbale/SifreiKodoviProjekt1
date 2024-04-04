@@ -436,28 +436,6 @@ Niži bitrate rezultiraju manjim datotekama, ali i potencijalno lošijom kvalite
 
 Na primjer, audio datoteka s većim bitrateom će imati bogatiji zvuk i više detalja nego datoteka s nižim bitrateom. Slično tome, video datoteka s visokim bitrateom će pružiti oštrije i jasnije slike u odnosu na video s nižim bitrateom.
 
-## Razlika između lossy i lossless u praksi
-
-### Lossless kompresija:
-
-Čuva sve originalne podatke, osiguravajući identičnu kvalitetu zvuka kao i nekomprimirani zapis. Očekivani omjer kompresije je 20-30% smanjenja veličine datoteke.
-
-### Lossy kompresija:
-
-Koriste se tehnike poput PAC-a za odbacivanje podataka koje ljudsko uho teško ili uopće ne može čuti. To rezultira značajno manjim datotekama (obično 70-95% smanjenja), idealnim za pohranu i streaming. Očekivati je gubitak kvalitete zvuka, posebno na visokim frekvencijama.
-
-#### Primjeri:
-
-Lossless formati:
-1. FLAC
-2. ALAC
-3. WAV
-
-Lossy formati:
-1. MP3
-2. AAC
-3. OGG
-
 ##### Zaključak:
 
 Izbor kompresije ovisi o specifičnim potrebama. Lossless je idealan za očuvanje originalne kvalitete zvuka, dok je lossy praktičniji za optimizaciju veličine datoteke. Razumijevanje prednosti i nedostataka obje metode pomaže u donošenju informirane odluke o kompresiji audio zapisa.
@@ -466,7 +444,7 @@ Izbor kompresije ovisi o specifičnim potrebama. Lossless je idealan za očuvanj
 | Pitanje           | Lossless kompresija                          | Lossy kompresija                               |
 |-------------------|----------------------------------------------|------------------------------------------------|
 | Čuva kvalitetu?   | Da                                           | Ne, dio podataka se gubi                       |
-| Smanjna veličina? | U manjoj količini (20% - 30%)                | U većoj količini (70% - 95%)                   |
+| Smanjna veličina? | U manjoj količini (50% - 60%)                | U većoj količini (70% - 95%)                   |
 | Korisno za?       | Ključne datoteke (dokumenti, programski kod) | Multimediju (fotografije, glazba, videozapisi) |
 
 ##### Usporedba bitratea:
