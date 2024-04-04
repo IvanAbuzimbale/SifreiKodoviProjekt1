@@ -426,7 +426,7 @@ WavPack podržava različite konfiguracije kanala, uključujući mono, stereo i 
 ---
 # Što je bitrate i koliko je važan
 ---
-Bitrate se odnosi na brzinu kojom se digitalni podaci prenose ili procesiraju. Izražava se u jedinici bitova po sekundi (symbol: bit/s), često u kombinaciji sa SI prefiksom kao što su kilo (1 kbit/s = 1.000 bita/s) ili mega (1 Mbit/s = 1.000 kbit/s).
+Bitrate se odnosi na brzinu kojom se digitalni podaci prenose ili procesiraju. Izražava se u jedinici bitova po sekundi (symbol: bit/s), često u kombinaciji sa SI (Međunarodni sustav mjernih jedinica) prefiksom kao što su kilo (1 kbit/s = 1.000 bita/s) ili mega (1 Mbit/s = 1.000 kbit/s).
 
 Bitrate je ključan koncept kod digitalnih audio i video datoteka jer direktno utječe na njihovu kvalitetu i veličinu.
 
