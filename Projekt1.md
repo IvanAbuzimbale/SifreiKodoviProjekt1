@@ -167,6 +167,61 @@ Lossy algoritmi za slike:
 3. HEIF (High Efficiency Image File Format)
 4. AVIF (AV1 Image File Format)
 
+Lossy algoritmi za slike:
+#### JPEG (Joint Photographhic Experts Group)
+Ovo je jedan od najčešće korištenih formata za slike na internetu.
+
+Lossy algoritam za kompresiju koji kao rezultat daje znatno manju količinu podataka sa vrlo malom (ako ikakvom) vizualnom promjenom kvalitete slike i rezolucije. 
+
+JPEG funkcionira tako da se maknu informacije koje nije lako vidjeti golim okom te istovremeno zadržajući informacije koje se vrlo lako vide.
+
+Koraci pretvorbe sliku u JPEG:
+
+![image](https://github.com/IvanAbuzimbale/SifreiKodoviProjekt1/assets/58472137/f985660e-41f1-469b-8b7e-f441e7a11f14)
+
+- Kako bi pogledali .jpg datoteku koristeći image viewer, tu datoteku moramo dekodirati. 
+- Kako bi se ta slika morala prikazati image viewer mora proći po ovim gore navedenim koracima u obrnutom redoslijedu.
+ 
+#### WebP
+Ovaj lossy algoritam kompresije je napravio Google u 2013. da se natječe s jpg-om za format fotografija, pa zato i imaju nekoliko sličnosti između između njih. 
+
+Najprije se slika podijeli na makroblokove te se za svaki makroblok koristi model za predviđanje, odnosno filtriranje, WebP primjenjuje filtriranje koristeći medotu bloka, a to se postiže definiranjem dvaju skupova piksela oko bloka: redak iznad bloka A i stupac lijevo od bloka L.
+
+![image](https://github.com/IvanAbuzimbale/SifreiKodoviProjekt1/assets/58472137/a5f3aacc-1f2a-420e-b058-516d9c245db4)
+
+
+ 
+Koristeći A i L, koder će ispuniti testni blok od 4x4 piksela i odrediti koji će proizvesti vrijednosti koje su najsličnije izvoru.
+
+Zatim se izračunava razlika između predviđenih i stvarnih vrijednosti piksela (residual), ova razlika predstavlja informacije koje se ne mogu precizno predvidjeti.
+
+Nakon toga slijedi entropijsko kodiranje, koristeći najčešće tehnika poput arihmetičkog kodiranja koje će dodijeliti kraće kodove simbolima koje se češto pojavljuju, što će na kraju rezultirati daljnjoj kompresiji podataka. 
+
+Prosjek u uštedi podataka između WebP i JPEG-a je između 20 i 35%.
+
+#### HEIF (High Efficiency Image File Format)
+HEIF je format koji kosisti moderne tehnike kompresije kojima se pohranjuju pojedinačne slika na kompaktan i visokokvalitetan način.
+
+Cilj HEIF-a je poboljšati postojeće formate slika poput JPEG-a, nudeći bolju kompresiju i naprednije značajke.
+
+Kod ovog lossy načina HEIF koristi tehnike poput prediktivnog, trasformacijskog i entropijskog kodiranja za smanjenje veličina datoteka uz očuvanje vizualne kvalitete.
+
+Ovim načinom se znatno brišu nepotrebne podatke i efikasnije se kompresiraju slike.
+
+Prednosti HEIF-a su: veća efikasnost kompresije, poboljšana kvaliteta slike, podrška za napredne postavke, fleksibilnost i mogućnost prilagodbe za buduće tehnologije kompresije 
+
+#### AVIF (AV1 Image File Format)
+AVIF je moderan format slike koji implementira tehnologiju video kompresije kodeka AV1 kako bi se postigle učinkovite kompresije slika.
+
+Kod ovog lossy načina AVIF kompresira sliku koristeći nekoliko tehnika. 
+
+Najprije se koristi predviđanje unutar okvira (intra-frame prediction) kako bi se predvidjele vrijednosti unutra okvira na temelju susjednih piksela.
+
+Onda se koristi transformacijsko kodiranje koje pomaže koncentrirati energiju slike u manje koeficijenata, time podaci postaju podložniji kompresiji.
+Zatim slijedi kvantizacija. Ovim postupkom se transformirani koeficijenti zaokruže na manju skup vrijednosti. Kod ovog koraka se gube informacije (lossy).
+
+Sljedeći korak je entropijsko kodiranje. Tu se koristeći tehnikama poput arihmetičkog kodiranja dodeljuju kraći kodovi simbolima koje se češto pojavljuju, što će na kraju rezultirati daljnjoj kompresiji podataka. 
+
 ---
 ### Audio kompresija:
 Kompresija audio podataka, koju ne treba pomiješati s kompresijom dinamičkog raspona, ima potencijal smanjiti propusnost prijenosa i zahtjeve za pohranu audio podataka.
