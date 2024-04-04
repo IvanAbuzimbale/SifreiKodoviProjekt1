@@ -329,7 +329,7 @@ Razvijen od strane Apple Inc. 2004. za kompresiju audio podataka bez gubitaka. N
 
 ALAC podržava do 8 audio kanala na 16, 20, 24 i 32 bita dubine s maksimalnom brzinom uzorkovanja od 384 kHz.
 
-ALAC podaci često se pohranjuju unutar MP4 spremnika s nastavkom naziva datoteke .m4a.
+ALAC podaci često se pohranjuju unutar MP4 spremnika s nastavkom naziva datoteke ".m4a".
 
 ALAC nije varijanta AAC-a (koji je format s gubicima), već nepovezani format bez gubitaka koji koristi linearno predviđanje (slično drugim kodeksima bez gubitaka).
 
@@ -402,7 +402,7 @@ Komprimirana datoteka sadrži kodirane audio podatke, zajedno s metapodacima i i
 #### WavPack:
 WavPack je besplatni format audio kompresije otvorenog koda bez gubitaka i aplikacija koja implementira format. Jedinstven je po tome što podržava hibridnu kompresiju zvuka uz normalnu kompresiju koja je slična načinu na koji radi FLAC. Također podržava komprimiranje širokog spektra formata bez gubitaka, uključujući različite varijante PCM-a i DSD-a koji se koriste u SACD-ovima, zajedno sa podrškom za surround zvuk.
 
-WavPack kompresija može komprimirati 8, 16, 24 i 32-bitne PCM audio datoteke s fiksnom točkom i 32-bitne pokretne točke u formatu datoteke .WAV.
+WavPack kompresija može komprimirati 8, 16, 24 i 32-bitne PCM audio datoteke s fiksnom točkom i 32-bitne pokretne točke u formatu datoteke ".WAV".
 Također može rukovati DSD ulazom u DSDIFF ili DSF formatu. Također podržava strujanje surround zvuka i visoke stope uzorkovanja.
 
 Kako bi osigurao rad velike brzine, WavPack koristi prediktor koji je u potpunosti implementiran u cjelobrojnoj matematici. U "brzom" načinu rada predviđanje je jednostavno aritmetička ekstrapolacija prethodna dva uzorka.
