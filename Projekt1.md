@@ -8,8 +8,9 @@
 ### 3. Lossless kompresija
 ### 4. Huffmanovo kodiranje
 ### 5. Lossless algoritmi za opće korištenje
+### Audio kompresija
 ### 6. Lossless algoritmi za audio zapise
-### 7. Lossless algoritmi za fotografije
+### 7. Lossless algoritmi za slike
 ### 8. Što je bitrate i koliko je važan
 
 ---
@@ -84,7 +85,7 @@ Težina novog čvora postavljena je na zbroj težine djece. Zatim ponovno primje
 
 ---
 
-#### 1. Lossless algoritmi za opće korištenje:
+#### Lossless algoritmi za opće korištenje:
 
 1. ANS
 2. Aritmetičko enkodiranje
@@ -430,7 +431,7 @@ Bitrate se odnosi na brzinu kojom se digitalni podaci prenose ili procesiraju. I
 
 Bitrate je ključan koncept kod digitalnih audio i video datoteka jer direktno utječe na njihovu kvalitetu i veličinu.
 
-Viši bitrate obično znači veću kvalitetu zvuka ili slike jer omogućava prenos više digitalnih informacji po sekundi.
+Veći bitrate obično znači veću kvalitetu zvuka ili slike jer omogućava prijenos više digitalnih informacji po sekundi.
 
 Niži bitrate rezultiraju manjim datotekama, ali i potencijalno lošijom kvalitetom.
 
