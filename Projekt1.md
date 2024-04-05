@@ -94,18 +94,7 @@ Težina novog čvora postavljena je na zbroj težine djece. Zatim ponovno primje
 4. RLE
 5. Huffmanovo enkodiranje
 
----
-#### Lossless algoritmi za slike:
----
-1. PNG (Portable Network Graphic) - PNG je naširoko korišten format kompresije bez gubitaka za slike. Koristi kombinaciju tehnika kompresije, uključujući Deflate kompresiju, za smanjenje veličine datoteke bez gubitka slikovnih podataka. Deflate kompresija nudi ravnotežu između učinkovitosti kompresije i računalne složenosti, što je čini prikladnom za širok raspon primjena. Njegova učinkovitost je u njegovoj sposobnosti identificiranja i uklanjanja suvišnih informacija uz očuvanje cjelovitosti izvornih podataka.
 
-2. GIF (Graphics Interchange Format) - GIF podržava kompresiju bez gubitaka za slike s do 256 boja. Kompresiju postiže korištenjem LZW (Lempel-Ziv-Welch) algoritma kompresije, koji je učinkovit za slike s velikim područjima pune boje.
-
-3. TIFF (Tagged Image File Format) -  podržava kompresiju bez gubitaka i kompresiju sa gubitcima, ali se često koristi s kompresijom bez gubitaka za potrebe arhiviranja ili kada se mora očuvati kvaliteta slike. Nudi različite metode kompresije uključujući LZW, ZIP i PackBits.
-
-4. BMP ((Bitmap) -  datoteke koje se mogu komprimirati korištenjem tehnika kompresije bez gubitaka kao što je RLE (Run-Length Encoding). BMP datoteke obično su veće od drugih formata, čak i nakon kompresije.
-
-5. WebP - WebP je relativno noviji format slike koji je razvio Google. Podržava i kompresiju s gubicima i bez gubitaka. WebP kompresija bez gubitaka temelji se na predviđanju vrijednosti piksela i entropijskom kodiranju.
 ---
 #### LZ77 kompresija:
 ---
@@ -149,6 +138,18 @@ Dekodiranje se nastavlja čitanjem kodova iz komprimiranih podataka i ispisivanj
 
 Izlaz LZW algoritma je tok kodova promjenjive duljine koji predstavljaju komprimirane podatke.
 
+---
+#### Lossless algoritmi za slike:
+---
+1. PNG (Portable Network Graphic) - PNG je naširoko korišten format kompresije bez gubitaka za slike. Koristi kombinaciju tehnika kompresije, uključujući Deflate kompresiju, za smanjenje veličine datoteke bez gubitka slikovnih podataka. Deflate kompresija nudi ravnotežu između učinkovitosti kompresije i računalne složenosti, što je čini prikladnom za širok raspon primjena. Njegova učinkovitost je u njegovoj sposobnosti identificiranja i uklanjanja suvišnih informacija uz očuvanje cjelovitosti izvornih podataka.
+
+2. GIF (Graphics Interchange Format) - GIF podržava kompresiju bez gubitaka za slike s do 256 boja. Kompresiju postiže korištenjem LZW (Lempel-Ziv-Welch) algoritma kompresije, koji je učinkovit za slike s velikim područjima pune boje.
+
+3. TIFF (Tagged Image File Format) -  podržava kompresiju bez gubitaka i kompresiju sa gubitcima, ali se često koristi s kompresijom bez gubitaka za potrebe arhiviranja ili kada se mora očuvati kvaliteta slike. Nudi različite metode kompresije uključujući LZW, ZIP i PackBits.
+
+4. BMP ((Bitmap) -  datoteke koje se mogu komprimirati korištenjem tehnika kompresije bez gubitaka kao što je RLE (Run-Length Encoding). BMP datoteke obično su veće od drugih formata, čak i nakon kompresije.
+
+5. WebP - WebP je relativno noviji format slike koji je razvio Google. Podržava i kompresiju s gubicima i bez gubitaka. WebP kompresija bez gubitaka temelji se na predviđanju vrijednosti piksela i entropijskom kodiranju.
 ---
 Lossy algoritmi za slike:
 1. JPEG
