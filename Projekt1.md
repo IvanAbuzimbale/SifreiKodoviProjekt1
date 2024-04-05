@@ -90,9 +90,8 @@ Težina novog čvora postavljena je na zbroj težine djece. Zatim ponovno primje
 ---
 1. ANS
 2. Aritmetičko enkodiranje
-3. Burrows – Wheeler transformacijski algoritam
-4. RLE
-5. Huffmanovo enkodiranje
+3. RLE
+4. Huffmanovo enkodiranje
 
 
 ---
