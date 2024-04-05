@@ -75,7 +75,7 @@ Huffmanovo kodiranje koristi specifičnu metodu za odabir reprezentacije za svak
 
 Tehnika funkcionira stvaranjem binarnog stabla čvorova. Oni se mogu pohraniti u pravilnom nizu, čija veličina ovisi o broju simbola n.
 
-Čvor može biti lisni čvor ili unutarnji čvor. U početku, svi čvorovi su lisni čvorovi, listovi, koji sadrže sam simbol, težinu (učestalost pojavljivanja) simbola i opcionalno, vezu na nadređeni čvor što olakšava čitanje koda (obrnuto) počevši od listova.
+Čvor može biti lisni čvor ili unutarnji čvor. U početku, svi čvorovi su lisni čvorovi, listovi, koji sadrže sam simbol, težinu (učestalost pojavljivanja) simbola i vezu na nadređeni čvor što olakšava čitanje koda (obrnuto) počevši od listova.
 
 Unutarnji čvorovi sadrže težinu, veze na dva podređena čvora i izbornu vezu na nadređeni čvor. Kao uobičajena konvencija, bit '0' predstavlja praćenje lijevog djeteta, a bit '1' predstavlja praćenje desnog djeteta.
 
@@ -97,11 +97,11 @@ Težina novog čvora postavljena je na zbroj težine djece. Zatim ponovno primje
 ---
 #### Lossless algoritmi za slike:
 ---
-1. PNG (Portable Network Graphic) - PNG je naširoko korišten format kompresije bez gubitaka za slike. Koristi kombinaciju tehnika kompresije, uključujući deflate kompresiju, za smanjenje veličine datoteke bez gubitka slikovnih podataka. Deflate kompresija nudi ravnotežu između učinkovitosti kompresije i računalne složenosti, što je čini prikladnom za širok raspon primjena. Njegova učinkovitost je u njegovoj sposobnosti identificiranja i uklanjanja suvišnih informacija uz očuvanje cjelovitosti izvornih podataka.
+1. PNG (Portable Network Graphic) - PNG je naširoko korišten format kompresije bez gubitaka za slike. Koristi kombinaciju tehnika kompresije, uključujući Deflate kompresiju, za smanjenje veličine datoteke bez gubitka slikovnih podataka. Deflate kompresija nudi ravnotežu između učinkovitosti kompresije i računalne složenosti, što je čini prikladnom za širok raspon primjena. Njegova učinkovitost je u njegovoj sposobnosti identificiranja i uklanjanja suvišnih informacija uz očuvanje cjelovitosti izvornih podataka.
 
 2. GIF (Graphics Interchange Format) - GIF podržava kompresiju bez gubitaka za slike s do 256 boja. Kompresiju postiže korištenjem LZW (Lempel-Ziv-Welch) algoritma kompresije, koji je učinkovit za slike s velikim područjima pune boje.
 
-3. TIFF (Tagged Image File Format) -  podržava i kompresiju bez gubitaka i kompresiju sa gubitcima, ali se često koristi s kompresijom bez gubitaka za potrebe arhiviranja ili kada se mora očuvati kvaliteta slike. Nudi različite metode kompresije uključujući LZW, ZIP i PackBits.
+3. TIFF (Tagged Image File Format) -  podržava kompresiju bez gubitaka i kompresiju sa gubitcima, ali se često koristi s kompresijom bez gubitaka za potrebe arhiviranja ili kada se mora očuvati kvaliteta slike. Nudi različite metode kompresije uključujući LZW, ZIP i PackBits.
 
 4. BMP ((Bitmap) -  datoteke koje se mogu komprimirati korištenjem tehnika kompresije bez gubitaka kao što je RLE (Run-Length Encoding). BMP datoteke obično su veće od drugih formata, čak i nakon kompresije.
 
@@ -116,19 +116,19 @@ Algoritam koristi klizni prozor za traženje podudaranja. Traži najdulje poduda
 Kada se pronađe podudaranje, algoritam zamjenjuje odgovarajući niz pokazivačem na prethodno pojavljivanje tog niza.
 
 Kompresija PNG formata:
-Algoritam kompresije koji se koristi u PNG-u zove se DEFLATE, što je kombinacija LZ77 (Lempel-Ziv 1977) i Huffmanovog kodiranja.
+Algoritam kompresije koji se koristi u PNG-u zove se Deflate, što je kombinacija LZ77 (Lempel-Ziv 1977) i Huffmanovog kodiranja.
 
 Prije kompresije, slikovni podaci se pretprocesiraju kako bi se optimizirali za kompresiju. To može uključivati pretvaranje slikovnih podataka u određeni prostor boja (kao što je RGB ili sive tonove) i izvođenje operacija filtriranja radi poboljšanja kompresivnosti.
 
-DEFLATE kompresija je proces u dva koraka:
+Deflate kompresija je proces u dva koraka:
 
 1. Kompresija LZ77: Ovaj korak uključuje pronalaženje ponovljenih uzoraka (nizova bajtova) unutar slikovnih podataka i njihovu zamjenu referencama na prethodna pojavljivanja.
 
 2. Huffmanovo kodiranje: Nakon kompresije LZ77, rezultirajući tok podataka dalje se komprimira korištenjem Huffmanovog kodiranja. Huffmanovo kodiranje dodjeljuje kodove promjenjive duljine različitim simbolima na temelju njihove učestalosti pojavljivanja, pri čemu se simbolima koji se češće pojavljuju dodjeljuju kraći kodovi. Ovaj korak optimizira kodiranje komprimiranih podataka.
 
-PNG organizira slikovne podatke u dijelove, od kojih svaki služi određenoj svrsi. Komprimirani slikovni podaci koje generira DEFLATE algoritam pohranjuju se u jedan ili više IDAT (Image Data) dijelova. Ovi dijelovi sadrže komprimirane podatke o pikselima, zajedno s metapodacima potrebnim za dekodiranje slike.
+PNG organizira slikovne podatke u dijelove, od kojih svaki služi određenoj svrsi. Komprimirani slikovni podaci koje generira Deflate algoritam pohranjuju se u jedan ili više IDAT (Image Data) dijelova. Ovi dijelovi sadrže komprimirane podatke o pikselima, zajedno s metapodacima potrebnim za dekodiranje slike.
 
-Kada se PNG slika dekodira, DEFLATE komprimirani slikovni podaci pohranjeni u IDAT dijelovima dekomprimiraju se obrnutim postupkom. To uključuje prvo primjenu Huffmanovog dekodiranja za dobivanje LZ77-komprimiranih podataka, a zatim izvođenje LZ77 dekompresije za rekonstrukciju izvornih slikovnih podataka.
+Kada se PNG slika dekodira, Deflate komprimirani slikovni podaci pohranjeni u IDAT dijelovima dekomprimiraju se obrnutim postupkom. To uključuje prvo primjenu Huffmanovog dekodiranja za dobivanje LZ77-komprimiranih podataka, a zatim izvođenje LZ77 dekompresije za rekonstrukciju izvornih slikovnih podataka.
 
 LZW (Lempel-Ziv-Welch) algoritam kompresije:
 Algoritam za kompresiju podataka bez gubitaka koji radi zamjenjivanje ponavljajućih uzoraka podataka kraćim kodovima. Razvili su ga Abraham Lempel, Jacob Ziv i Terry Welch 1980-ih.
@@ -150,28 +150,11 @@ Dekodiranje se nastavlja čitanjem kodova iz komprimiranih podataka i ispisivanj
 Izlaz LZW algoritma je tok kodova promjenjive duljine koji predstavljaju komprimirane podatke.
 
 ---
-#### WebP:
-Algoritam kompresije bez gubitaka počinje predviđanjem vrijednosti piksela na temelju susjednih piksela unutar slike. Koristi različite načine predviđanja za procjenu vrijednosti svakog piksela na slici.
-
-Načini predviđanja mogu uključivati jednostavne tehnike poput prostornog predviđanja (predviđanje vrijednosti piksela na temelju obližnjih piksela) ili složenije metode poput prediktivnih transformacija.
-
-Predviđanjem vrijednosti piksela, WebP može identificirati i iskoristiti prostornu redundanciju u slikovnim podacima.
-
-Nakon predviđanja vrijednosti piksela, WebP izračunava razliku (rezidual) između predviđenih vrijednosti i stvarnih vrijednosti piksela. Taj ostatak predstavlja pogrešku ili odstupanje između predviđanja i pravih vrijednosti piksela.
-
-Preostali podaci obično sadrže nižu entropiju u usporedbi s izvornim pikselnim podacima, što ih čini podložnijim kompresiji.
-
-Nakon što se dobiju preostali podaci, WebP koristi tehnike entropijskog kodiranja za daljnju kompresiju podataka. Entropijsko kodiranje dodjeljuje kodove promjenjive duljine simbolima u podacima, s kraćim kodovima koji se dodjeljuju simbolima koji se češće pojavljuju.
-
-WebP obično koristi Huffmanovo kodiranje ili aritmetičko kodiranje za entropijsko kodiranje. Ove tehnike iskorištavaju statistička svojstva podataka za postizanje učinkovite kompresije.
-
 Lossy algoritmi za slike:
 1. JPEG
 2. WebP
 3. HEIF (High Efficiency Image File Format)
 4. AVIF (AV1 Image File Format)
-
-Lossy algoritmi za slike:
 
 ---
 #### JPEG (Joint Photographhic Experts Group)
@@ -192,7 +175,7 @@ Koraci pretvorbe sliku u JPEG:
 ---
 #### WebP
 ---
-Ovaj lossy algoritam kompresije je napravio Google u 2013. da se natječe s jpg-om za format fotografija, pa zato i imaju nekoliko sličnosti između između njih. 
+Ovaj lossy algoritam kompresije je napravio Google u 2013. da se natječe s jpg-om za format fotografija, pa zato i imaju nekoliko sličnosti između njih. 
 
 Najprije se slika podijeli na makroblokove te se za svaki makroblok koristi model za predviđanje, odnosno filtriranje, WebP primjenjuje filtriranje koristeći medotu bloka, a to se postiže definiranjem dvaju skupova piksela oko bloka: redak iznad bloka A i stupac lijevo od bloka L.
 
@@ -211,7 +194,7 @@ Prosjek u uštedi podataka između WebP i JPEG-a je između 20 i 35%.
 ---
 #### HEIF (High Efficiency Image File Format)
 ---
-HEIF je format koji kosisti moderne tehnike kompresije kojima se pohranjuju pojedinačne slika na kompaktan i visokokvalitetan način.
+HEIF je format koji koristi moderne tehnike kompresije kojima se pohranjuju pojedinačne slika na kompaktan i visokokvalitetan način.
 
 Cilj HEIF-a je poboljšati postojeće formate slika poput JPEG-a, nudeći bolju kompresiju i naprednije značajke.
 
@@ -233,7 +216,7 @@ Najprije se koristi predviđanje unutar okvira (intra-frame prediction) kako bi 
 Onda se koristi transformacijsko kodiranje koje pomaže koncentrirati energiju slike u manje koeficijenata, time podaci postaju podložniji kompresiji.
 Zatim slijedi kvantizacija. Ovim postupkom se transformirani koeficijenti zaokruže na manju skup vrijednosti. Kod ovog koraka se gube informacije (lossy).
 
-Sljedeći korak je entropijsko kodiranje. Tu se koristeći tehnikama poput arihmetičkog kodiranja dodeljuju kraći kodovi simbolima koje se češto pojavljuju, što će na kraju rezultirati daljnjoj kompresiji podataka. 
+Sljedeći korak je entropijsko kodiranje. Tu se koristeći tehnikama poput aritmetičkog kodiranja dodeljuju kraći kodovi simbolima koje se češto pojavljuju, što će na kraju rezultirati daljnjoj kompresiji podataka. 
 
 ---
 ### Audio kompresija:
@@ -311,11 +294,11 @@ Komprimirani podaci, zajedno s potrebnim zaglavljem i informacijama za provjeru 
 Razina kompresije može se podesiti putem bitrate (brzine prijenosa) postavke, mjereno u kilobitima po sekundi (kbps). Veći bitrate znače manju kompresiju (a time i veću kvalitetu), dok niži bitrate rezultiraju manjim datotekama i lošijom kvalitetom.
 
 ---
-#### ACC:
+#### AAC:
 ---
 Koristi tehnike perceptivnog kodiranja za uklanjanje suvišnih i manje čujnih dijelova audio signala.
 
-Kao nadogradnja na MP3, ACC za analizu karakteristika audio signala koristeći psihoakustičke modele.
+Kao nadogradnja na MP3, AAC za analizu karakteristika audio signala koristeći psihoakustičke modele.
 
 AAC dijeli audio signal u male blokove, obično 1024 ili 2048 uzoraka svaki. Za svaki blok primjenjuje transformaciju vremensko-frekvencijske domene, često koristeći modificiranu diskretnu kosinusnu transformaciju (MDCT), za pretvaranje audio uzoraka iz vremenske domene u frekvencijsku domenu.
 
