@@ -6,8 +6,8 @@
 ### 1. Uvod
 ### 2. Algoritmi kompresije
 ### 3. Lossless kompresija
-### 4. Huffmanovo kodiranje
-### 5. Lossless algoritmi za opće korištenje
+### 4. Lossless algoritmi za opće korištenje
+### 5. Huffmanovo kodiranje
 ### 6. Audio kompresija
 ### 7. Što je bitrate i koliko je važan
 ### 8. Zaključak
@@ -30,13 +30,15 @@ Dekompresija je proces koji vraća kompresiranu datoteku ili mapu dali ona bila 
 
 Mnogo je koristi od dekompresije, jedna od glavnih je da primatelj poslane datoteke može pogledati cijeli sadržaj u cijelosti kao što je bilo u originalu pošiljatelja.
 
-Sada kada imamo nekakav dojam što čemu služi, pitanje je kako implementiramo navedene procese. Implementacija se vrši koristeći algoritme za kompresiju i dekompresiju, kod kojih jedan ne može raditi bez drugoga.
+Sada kada imamo nekakav dojam što čemu služi, pitanje je kako implementiramo navedene procese.
+
+Implementacija se vrši koristeći algoritme za kompresiju i dekompresiju, kod kojih jedan ne može raditi bez drugoga.
 
 ---
 #### Algoritmi kompresije
 Postoje dva tipa algoritama za kompresiju:
-1. Lossless compression (Kompresija bez gubitka)
-2. Lossy compression (Kompresija sa gubitkom)
+1. Lossless kompresija (Kompresija bez gubitka)
+2. Lossy kompresija (Kompresija sa gubitkom)
 ---
 #### Lossless kompresija:
 ---
@@ -64,6 +66,16 @@ Nijedan algoritam kompresije bez gubitaka ne može učinkovito komprimirati sve 
 
 ---
 
+#### Lossless algoritmi za opće korištenje:
+
+---
+1. ANS
+2. Aritmetičko enkodiranje
+3. RLE
+4. Huffmanovo enkodiranje
+
+---
+
 #### Huffmanovo kodiranje:
 
 ---
@@ -82,17 +94,6 @@ Unutarnji čvorovi sadrže težinu, veze na dva podređena čvora i izbornu vezu
 Proces počinje s čvorovima lista koji sadrže vjerojatnosti simbola koji predstavljaju. Zatim, proces uzima dva čvora s najmanjom vjerojatnošću i stvara novi interni čvor koji ima ta dva čvora kao djecu.
 
 Težina novog čvora postavljena je na zbroj težine djece. Zatim ponovno primjenjujemo postupak, na novom unutarnjem čvoru i na preostalim čvorovima, ponavljamo ovaj postupak sve dok ne ostane samo jedan čvor, koji je korijen Huffmanovog stabla.
-
----
-
-#### Lossless algoritmi za opće korištenje:
-
----
-1. ANS
-2. Aritmetičko enkodiranje
-3. RLE
-4. Huffmanovo enkodiranje
-
 
 ---
 #### LZ77 kompresija:
@@ -149,7 +150,9 @@ Izlaz LZW algoritma je tok kodova promjenjive duljine koji predstavljaju komprim
 4. BMP ((Bitmap) -  datoteke koje se mogu komprimirati korištenjem tehnika kompresije bez gubitaka kao što je RLE (Run-Length Encoding). BMP datoteke obično su veće od drugih formata, čak i nakon kompresije.
 
 5. WebP - WebP je relativno noviji format slike koji je razvio Google. Podržava i kompresiju s gubicima i bez gubitaka. WebP kompresija bez gubitaka temelji se na predviđanju vrijednosti piksela i entropijskom kodiranju.
+
 ---
+
 Lossy algoritmi za slike:
 1. JPEG
 2. WebP
