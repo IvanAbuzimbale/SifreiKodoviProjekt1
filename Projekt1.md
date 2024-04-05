@@ -66,16 +66,6 @@ Nijedan algoritam kompresije bez gubitaka ne može učinkovito komprimirati sve 
 
 ---
 
-#### Lossless algoritmi za opće korištenje:
-
----
-1. ANS
-2. Aritmetičko enkodiranje
-3. RLE
-4. Huffmanovo enkodiranje
-
----
-
 #### Huffmanovo kodiranje:
 
 ---
@@ -137,6 +127,16 @@ Tijekom dekodiranja, komprimirani podaci se čitaju, a kodovi se preslikavaju na
 Dekodiranje se nastavlja čitanjem kodova iz komprimiranih podataka i ispisivanjem odgovarajućih nizova simbola.
 
 Izlaz LZW algoritma je tok kodova promjenjive duljine koji predstavljaju komprimirane podatke.
+
+---
+
+#### Lossless algoritmi za opće korištenje:
+
+---
+1. ANS
+2. Aritmetičko enkodiranje
+3. RLE
+4. Huffmanovo enkodiranje
 
 ---
 #### Lossless algoritmi za slike:
