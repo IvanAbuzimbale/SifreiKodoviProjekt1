@@ -6,8 +6,8 @@
 ### 1. Uvod
 ### 2. Algoritmi kompresije
 ### 3. Lossless kompresija
-### 4. Lossless algoritmi za opće korištenje
-### 5. Huffmanovo kodiranje
+### 4. Huffmanovo kodiranje
+### 5. Lossless algoritmi za opće korištenje
 ### 6. Audio kompresija
 ### 7. Što je bitrate i koliko je važan
 ### 8. Zaključak
